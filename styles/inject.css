@@ -1,0 +1,54 @@
+/* www.emag.ro  */
+/* Hide sale prices and "99" at the end */
+body .product-old-price,
+body .card-item .product-badge-box,
+body .product-badge-box,
+body .card .product-new-price sup,
+body .product-new-price sup {
+  display: none;
+}
+
+/* Make price less proeminent (usually it's red) */
+body .card .product-new-price,
+body .product-new-price {
+  color: initial;
+  font-size: 1em;
+  opacity: 0.7;
+}
+
+
+
+
+
+/* www.fashiondays.ro  */
+/* Hide sale prices and "99" at the end */
+body .campaign-description .campaign-discount span,
+body .price__decimals--sup,
+body #product-buy .top-marketing-banner,
+body .similar-products .no-discount,
+body .product-buy-box .old-price.no-discount,
+body .product-buy-box .advantage {
+  display: none;
+}
+
+body .campaign-description .campaign-discount strong,
+body .product-buy-box .new-price,
+body .similar-products .elastislide-horizontal ul li .campaign-info .campaign-discount{
+  color: inherit;
+}
+
+
+
+
+
+/* amazon.com */
+/* Hide sale prices*/
+body .priceBlock + .a-row {
+  display:  none;
+}
+
+/* Make price less proeminent (usually it's red) */
+body .GB-M-COMMON .dealPriceText,
+body .a-color-price {
+  color: initial !important;
+}

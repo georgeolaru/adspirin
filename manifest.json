@@ -1,0 +1,31 @@
+{
+  "name": "Adspirin",
+  "description": "Pull out the psychological design tricks that e-commerce websites use to influence your behavior online.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "/assets/icon16.png",
+    "32": "/assets/icon32.png",
+    "48": "/assets/icon48.png",
+    "128": "/assets/icon128.png"
+  },
+  "permissions": ["contentSettings"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.emag.ro/*",
+        "https://www.fashiondays.ro/*",
+        "https://www.amazon.com/*"
+      ],
+      "css": [
+        "styles/inject.css"
+      ],
+      "js": [
+        "styles/inject.js"
+      ]
+    }
+  ]
+}
